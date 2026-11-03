@@ -1,0 +1,28 @@
+{
+ "model": "metaformer",
+ "repo": "LM_2021_Metaformer-pytorch",
+ "target_repo": "LM_Dec_AttnFree_MetaformerGPT",
+ "category": "AttnFree",
+ "upstream": "lucidrains/metaformer-gpt (MIT)",
+ "unified": [
+  "heads 8 dim_head 64 (upstream 16/32)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "verify5",
+ "started": "2026-10-20 09:00:20",
+ "smoke": false,
+ "rows": {
+  "512": {
+   "normal": 0.03173828125,
+   "values": 0.014892578125,
+   "keys": 0.022216796875
+  },
+  "2048": {
+   "normal": 0.01904296875,
+   "values": 0.012451171875,
+   "keys": 0.02001953125
+  }
+ },
+ "seconds": 11.7
+}

@@ -1,0 +1,65 @@
+{
+ "model": "metaformer",
+ "repo": "LM_2021_Metaformer-pytorch",
+ "target_repo": "LM_Dec_AttnFree_MetaformerGPT",
+ "category": "AttnFree",
+ "upstream": "lucidrains/metaformer-gpt (MIT)",
+ "unified": [
+  "heads 8 dim_head 64 (upstream 16/32)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "scaling",
+ "started": "2026-10-19 17:51:57",
+ "smoke": false,
+ "rows": [
+  {
+   "len": 512,
+   "train": {
+    "peak_mb": 133.7,
+    "ms": 15.9,
+    "dtype": "fp32"
+   },
+   "infer": {
+    "peak_mb": 14.1,
+    "ms": 7.0,
+    "dtype": "fp32"
+   }
+  },
+  {
+   "len": 1024,
+   "train": {
+    "peak_mb": 244.8,
+    "ms": 21.5,
+    "dtype": "fp32"
+   },
+   "infer": {
+    "peak_mb": 28.1,
+    "ms": 7.0,
+    "dtype": "fp32"
+   }
+  },
+  {
+   "len": 2048,
+   "train": {
+    "peak_mb": 485.0,
+    "ms": 35.9,
+    "dtype": "fp32"
+   },
+   "infer": {
+    "peak_mb": 56.2,
+    "ms": 14.0,
+    "dtype": "fp32"
+   }
+  },
+  {
+   "len": 4096,
+   "note": "not supported (model built for <= 2048)"
+  },
+  {
+   "len": 8192,
+   "note": "not supported (model built for <= 2048)"
+  }
+ ],
+ "seconds": 4.7
+}

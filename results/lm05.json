@@ -1,0 +1,103 @@
+{
+ "model": "metaformer",
+ "repo": "LM_2021_Metaformer-pytorch",
+ "target_repo": "LM_Dec_AttnFree_MetaformerGPT",
+ "category": "AttnFree",
+ "upstream": "lucidrains/metaformer-gpt (MIT)",
+ "unified": [
+  "heads 8 dim_head 64 (upstream 16/32)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "lm05",
+ "started": "2026-10-19 22:16:57",
+ "smoke": false,
+ "params": 18631728,
+ "micro_batch": null,
+ "steps": 6000,
+ "budget_steps": 6000,
+ "capped": false,
+ "batch": 32,
+ "train_len": 512,
+ "pairs": 16,
+ "bf16": false,
+ "minutes": 20.8,
+ "history": [
+  {
+   "step": 500,
+   "loss": 4.170820713043213,
+   "acc_train_len": 0.0166015625
+  },
+  {
+   "step": 1000,
+   "loss": 4.16218376159668,
+   "acc_train_len": 0.017578125
+  },
+  {
+   "step": 1500,
+   "loss": 4.169308662414551,
+   "acc_train_len": 0.01220703125
+  },
+  {
+   "step": 2000,
+   "loss": 4.147168159484863,
+   "acc_train_len": 0.0205078125
+  },
+  {
+   "step": 2500,
+   "loss": 4.113197326660156,
+   "acc_train_len": 0.0166015625
+  },
+  {
+   "step": 3000,
+   "loss": 4.086409568786621,
+   "acc_train_len": 0.02392578125
+  },
+  {
+   "step": 3500,
+   "loss": 4.052563667297363,
+   "acc_train_len": 0.03125
+  },
+  {
+   "step": 4000,
+   "loss": 4.0556135177612305,
+   "acc_train_len": 0.021484375
+  },
+  {
+   "step": 4500,
+   "loss": 4.042841911315918,
+   "acc_train_len": 0.0234375
+  },
+  {
+   "step": 5000,
+   "loss": 4.037961959838867,
+   "acc_train_len": 0.01806640625
+  },
+  {
+   "step": 5500,
+   "loss": 4.066702842712402,
+   "acc_train_len": 0.02392578125
+  },
+  {
+   "step": 6000,
+   "loss": 4.031643867492676,
+   "acc_train_len": 0.02783203125
+  }
+ ],
+ "test": {
+  "512": {
+   "acc": 0.0269775390625,
+   "answers": 8192
+  },
+  "1024": {
+   "acc": 0.0234375,
+   "answers": 8192
+  },
+  "2048": {
+   "acc": 0.01806640625,
+   "answers": 8192
+  }
+ },
+ "chance": 0.015625,
+ "seconds": 1249.2
+}
